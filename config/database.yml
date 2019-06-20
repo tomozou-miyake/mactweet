@@ -49,6 +49,5 @@ test:
 #
 production:
   <<: *default
-  database: mactweet_production
-  username: mactweet
-  password: <%= ENV['MACTWEET_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  database: mydatabase
